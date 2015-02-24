@@ -19,4 +19,4 @@ Following libraries are required for the building process and their are availabl
 - $ sudo mkdir /usr/local/share/tetrisgl
 - $ cd src/data/
 - $ cp -r * /usr/local/share/tetrisgl/
-- $ g++ -O3 `Magick++-config --cflags --cppflags` `sdl-config --cflags` -o tetrisgl *.cpp `Magick++-config --ldflags --libs` `sdl-config --libs` -lSDL_ttf -lSDL_mixer -fpermissive -lGL -lGLEW -lGLU -lcwiid
+- $ g++ -O3 \`Magick++-config --cflags --cppflags\` \`sdl-config --cflags\` -o tetrisgl *.cpp \`Magick++-config --ldflags --libs\` \`sdl-config --libs\` -lSDL_ttf -lSDL_mixer -fpermissive -lGL -lGLEW -lGLU -lcwiid
