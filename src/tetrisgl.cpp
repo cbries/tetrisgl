@@ -14,6 +14,7 @@
 #include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
 #include <cwiid.h>
 
 using namespace std;

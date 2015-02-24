@@ -12,11 +12,11 @@ Following libraries are required for the building process and their are availabl
 - GLEW
 - Magick++ (NOT GraphicsMagick++!) 
 
-## Basic Installation
-- $ tar xfvz tetris-x.x.x.tar.gz
-- $ cd tetrisgl
-- $ ./configure
-- $ make
-- $ sudo make install
+### Linux Mint apt-get Calls and Build
+- $ sudo apt-get install libmagick++-dev
+- $ sudo apt-get install libglew1.6-dev
+- $ sudo apt-get install libcwiid-dev libcwiimote-dev
 - $ sudo mkdir /usr/local/share/tetrisgl
-- $ sudo cp -r --parents src/data/* /usr/local/share/tetrisgl
+- $ cd src/data/
+- $ cp -r * /usr/local/share/tetrisgl/
+- $ g++ -O3 `Magick++-config --cflags --cppflags` `sdl-config --cflags` -o tetrisgl *.cpp `Magick++-config --ldflags --libs` `sdl-config --libs` -lSDL_ttf -lSDL_mixer -fpermissive -lGL -lGLEW -lGLU -lcwiid

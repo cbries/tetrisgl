@@ -20,6 +20,7 @@
 #include <GL/gl.h>
 #include <iostream>
 #include <sstream>
+#include <string.h>
 #include <iomanip>
 #include <algorithm>
 #include "glInfo.h"
